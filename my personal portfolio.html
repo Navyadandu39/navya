@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #5d50a5;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #067a44;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #575757;
+            padding: 0.5em 1em;
+        }
+        .container {
+            width: 80%;
+            margin: 2em auto;
+            padding: 1em;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        .services, .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .services div, .skills div {
+            flex: 1;
+            margin: 0.5em;
+            padding: 1em;
+            background: #f4f4f4;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+        }
+        form input[type="submit"] {
+            background: #9b4caf;
+            color: white;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background: #0c6cda;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navya Dandu</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to Navya portfolio. Here you can learn more about me, my skills. Feel free to reach out through the contact form below.</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Navya Dandu, I done my graduation in the Specialization of Computer Science & Engineering. As a fresher,I am eager to kickstart my career and contribute positively to a forward-thinking organization.</p>
+        </section>
+        <section id="project">
+            <h2>Project</h2>
+            <div>
+                <h3>Flood prediction using machine learning models-</h3>
+                <ul type="square">
+                <li><p>We have proposed ML based rainfall prediction and forecasting to efficiently to predict the rainfall and to do forecasting for upcoming years.</p></li>
+                <li><p>In this project we used some algorithms like “Support Vector Machine” (SVM), Decision tree, Logistic Regression, Random Forest Algorithm.</p></li>
+                <li><p>As compared with the above algorithms “Logistic Regression” gives more accurate results and provide high performance
+                accuracy and recall. So that the best algorithm for flood prediction is Logistic Regression with (99%) accurate results.
+                </p></li></ul>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div>
+                <h3>HTML</h3>
+                <p>I have basic knowledge in html</p>
+            </div>
+            <div>
+                <h3>CSS</h3>
+                <p>I have basic knowledge in Css</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://submit-form" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+</body>
+</html>
